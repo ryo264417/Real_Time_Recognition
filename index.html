@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>リアルタイムでの姿勢推定 with TensorFlow.js and posenet</title>
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
+</head>
+<body>
+	<article id="article">
+		<h1 class="text-center" id="title">リアルタイムでの姿勢推定<br><small> with TensorFlow.js and posenet</small></h1>
+
+		<video id="video" width="800px" height="600px" autoplay="1" style="position:absolute;"></video>
+    <canvas id="canvas" width="800px" height="600px" style="position:absolute;"></canvas>
+
+		<div class="container-b">
+			<div id="faces-container">
+				<canvas height="100" id="faceCanvas" width="100"></canvas>
+			</div>
+		</div>
+
+		<div class="container-b">
+			<div class="output">
+				<ul class="list-unstyled" id="console">
+					<li>please load model.</li>
+				</ul>
+			</div>
+		</div>
+
+	</article>
+	<footer class="text-center">
+	</footer>
+  <script src="js/jquery.min.js"></script>
+	<script src="js/predict.js"></script>
+</body>
+</html>
