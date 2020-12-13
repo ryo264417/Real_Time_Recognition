@@ -13,7 +13,7 @@ async function loadModel(){
   console.log("model loading..");
 
   $("#console").html(`<li>model loading...</li>`);
-  model = await tf.loadLayersModel(`../vgg16_model/model.json`);
+  model = await tf.loadModel(`../vgg16_model/model.json`);
 
   console.log("model loaded.");
   $("#console").html(`<li>model loaded.</li>`);
