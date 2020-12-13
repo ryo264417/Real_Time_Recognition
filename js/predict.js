@@ -1,24 +1,3 @@
-/**
-* @license
-* Copyright Copyright 2018 Google Inc. All Rights Reserved.
-* Apache License Version 2.0（「本ライセンス」）に基づいてライセンスされます。
-* あなたがこのファイルを使用するためには、本ライセンスに従わなければなりません。
-* 本ライセンスのコピーは下記の場所から入手できます。
-*
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* 適用される法律または書面での同意によって命じられない限り、
-* 本ライセンスに基づいて頒布されるソフトウェアは、明示黙示を問わず、
-* いかなる保証も条件もなしに「現状のまま」頒布されます。
-* 本ライセンスでの権利と制限を規定した文言については、本ライセンスを参照してください。
-*/
-/*
-* このプログラムは
-* https://github.com/tensorflow/tfjs-models/tree/master/posenet/demos
-* および
-* https://github.com/tensorflow/tfjs-models/blob/master/posenet/demos/camera.js
-* をもとに作成しました。
-*/
 let originalVideoWidth=640;
 let model;
 const CLASSES =  ({0:'Ideal',1:'Not'})
